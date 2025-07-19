@@ -1,0 +1,148 @@
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  /* Responsive containers */
+  .container {
+    @apply px-4;
+  }
+
+  /* Responsive cards */
+  .card {
+    @apply p-4;
+  }
+
+  /* Calendar responsiveness */
+  .calendar-container {
+    @apply w-full overflow-x-auto;
+  }
+
+  /* Button and input sizing */
+  .button, .input {
+    @apply h-10 px-3 py-2 text-sm;
+  }
+
+  /* Navigation improvements */
+  .nav-menu {
+    @apply fixed inset-0 z-50 bg-background/95 backdrop-blur-sm;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu.open {
+    transform: translateX(0);
+  }
+
+  /* Modal sizing */
+  .modal-content {
+    @apply w-[90vw] max-w-lg mx-auto;
+  }
+
+  /* Grid adjustments */
+  .grid {
+    @apply grid-cols-1 gap-4;
+  }
+
+  /* Table responsiveness */
+  .table-container {
+    @apply overflow-x-auto -mx-4 px-4;
+  }
+
+  /* Form layout */
+  .form-group {
+    @apply flex flex-col gap-2;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    @apply fixed inset-y-0 left-0 w-64 -translate-x-full;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.open {
+    @apply translate-x-0;
+  }
+
+  /* Header adjustments */
+  .header {
+    @apply sticky top-0 z-40 h-14;
+  }
+
+  /* Menu button */
+  .menu-button {
+    @apply block lg:hidden;
+  }
+
+  /* Responsive typography */
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  /* Calendar event cards */
+  .event-card {
+    @apply flex flex-col p-3;
+  }
+
+  .event-card-header {
+    @apply flex items-center justify-between mb-2;
+  }
+
+  .event-card-title {
+    @apply text-base font-medium;
+  }
+
+  .event-card-time {
+    @apply text-sm;
+  }
+
+  /* Bottom navigation */
+  .bottom-nav {
+    @apply fixed bottom-0 left-0 right-0 bg-background border-t border-border px-4 py-2 flex justify-around items-center;
+  }
+
+  .bottom-nav-item {
+    @apply flex flex-col items-center text-xs;
+  }
+
+  /* Floating action button */
+  .fab {
+    @apply fixed right-4 bottom-16 w-12 h-12 rounded-full flex items-center justify-center shadow-lg;
+  }
+
+  /* Toast notifications */
+  .toast {
+    @apply fixed bottom-20 left-4 right-4 transform;
+  }
+
+  /* Loading states */
+  .loading-overlay {
+    @apply fixed inset-0 bg-background/80 backdrop-blur-sm flex items-center justify-center;
+  }
+
+  /* Focus mode UI */
+  .focus-timer {
+    @apply text-4xl font-mono text-center my-4;
+  }
+
+  /* AI chat interface */
+  .chat-container {
+    @apply fixed inset-0 flex flex-col;
+  }
+
+  .chat-messages {
+    @apply flex-1 overflow-y-auto p-4;
+  }
+
+  .chat-input {
+    @apply sticky bottom-0 p-4 bg-background border-t border-border;
+  }
+}

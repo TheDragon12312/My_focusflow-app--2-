@@ -1,0 +1,14 @@
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:;
+
+/assets/*.js
+  Content-Type: application/javascript
+
+/assets/*.css
+  Content-Type: text/css
+
+/assets/*.woff2
+  Content-Type: font/woff2
+
+/assets/*.woff
+  Content-Type: font/woff
